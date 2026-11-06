@@ -9,3 +9,6 @@ After a successful run, open **Actions → Build APK → Artifacts** and downloa
 
 ## Project
 The Android project is stored in the `TimeWallpaper/` directory.
+
+
+Build verification: Android APK build is triggered on updates to `main`.

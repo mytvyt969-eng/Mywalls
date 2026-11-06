@@ -36,6 +36,11 @@ jobs:
         with:
           gradle-version: '8.7'
 
+      - name: Rebuild verified ZIP from base64 chunks
+        run: |
+          cat TimeWallpaper.zip.b64.part0 TimeWallpaper.zip.b64.part1 TimeWallpaper.zip.b64.part2 TimeWallpaper.zip.b64.part3 | base64 --decode > TimeWallpaper.zip
+          unzip -tq TimeWallpaper.zip
+
       - name: Extract Android project
         run: unzip -o TimeWallpaper.zip
 

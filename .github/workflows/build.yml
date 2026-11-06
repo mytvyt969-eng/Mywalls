@@ -38,7 +38,7 @@ jobs:
 
       - name: Rebuild verified ZIP from base64 chunks
         run: |
-          cat TimeWallpaper.zip.b64.part0 TimeWallpaper.zip.b64.part1 TimeWallpaper.zip.b64.part2 TimeWallpaper.zip.b64.part3 | base64 --decode > TimeWallpaper.zip
+          cat TimeWallpaper.zip.b64.part0 TimeWallpaper.zip.b64.part1 TimeWallpaper.zip.b64.part2 TimeWallpaper.zip.b64.part3a TimeWallpaper.zip.b64.part3b0 TimeWallpaper.zip.b64.part3b1 TimeWallpaper.zip.b64.part3b2 | base64 --decode > TimeWallpaper.zip
           unzip -tq TimeWallpaper.zip
 
       - name: Extract Android project
